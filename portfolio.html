@@ -7,7 +7,9 @@
     <!--Nom de la page web-->
     <title>Portfolio Personnel</title>
     <!--icone de la page web-->    <!--?????????????????????????????????-->
-    <link rel="icon" href="/apercu-du-portfolio.png"/> 
+    <link rel="icon" href="/apercu-du-portfolio.png"/>
+    <link rel="stylesheet" href="style.css"/> 
+
 </head>
 <body>
     <header>
@@ -32,7 +34,7 @@
     
             </p>
             <!-- creation de d'une image-->
-        <img src="/apercu-du-portfolio.png" alt="Not Found">
+        <img src="téléchargement.jpg" alt="Not Found">
         
         </section>
         <!-- creation de la section Services-->
@@ -140,7 +142,7 @@ le lit jusqu'au bout.
         <!-- creation de la section Contact--> 
         <section id="contacts">
             <h1>Contact</h1>
-            <table border="1">
+            <table>
                 <tr>
                     <th>Num Telephone</th>
                     <th>Adresse mail</th>
@@ -152,30 +154,30 @@ le lit jusqu'au bout.
                     <th>Rim Arfa</th>
                 </tr>
             </table>
-            <h1 align="center">Contact</h1>
+            
             <!--FORMULAIRE-->
     <form name="form1" method="post" action="">
-        <center>
-        <label><b>Votre Prenom</b></label>
-        <input type="text" name="prenom" />
+        
+        <label><b>Prenom</b></label>
+        <input id="prenom" type="text" name="prenom" />
         <br>
         <br>
         <label><b>Nom</b></label>
-        <input type="text" name="nom" />
+        <input id="nom" type="text" name="nom" />
         <br>
         <br>
-        <label><b>civilite</b></label>
-        <input type="radio" name="civilite" value="Mme"  /> Madame 
-        <input type="radio" name="civilite" value="Mlle" />Mademoiselle 
-        <input type="radio" name="civilite" value="M" checked="checked"/> Monsieur
+        <label><b id="C">civilite</b></label>
+        <input class="title" type="radio" name="civilite" value="Mme"  /> Madame 
+        <input class="title" type="radio" name="civilite" value="Mlle" />Mademoiselle 
+        <input class="title" type="radio" name="civilite" value="M" checked="checked"/> Monsieur
         <br>
         <br>
         <label><b>Email</b></label>
-        <input type="email" name="email" />
+        <input id="email" type="email" name="email" />
         <br>
         <br>
         <label><b>Abonnement</b></label>
-        <input type="checkbox" name="abonnement" value="oui" />Abonnement à la newsletter
+        <input id="abon" type="checkbox" name="abonnement" value="oui" />Abonnement à la newsletter
         <br>
         <br>
         <label><b>Préférence</b></label>
@@ -186,7 +188,7 @@ le lit jusqu'au bout.
         <br>
         <br>
         <input type="submit" name="Submit" value="Envoyer" />
-        </center>
+        
     </form>
 
         </section>
@@ -197,6 +199,7 @@ le lit jusqu'au bout.
     </main>
     <footer>
         <label>Any comments?</label>
+        <br>
                 <textarea></textarea>
                 <br>
                 <br>
